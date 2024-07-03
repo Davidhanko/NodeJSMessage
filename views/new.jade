@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 form
+    p Welcome to #{title}
+    form(method='post', action='/new')
+        input(type='text', name='user', placeholder='User')
+        input(type='text', name='text', placeholder='Message')
+        input(type='submit', value='Send')
